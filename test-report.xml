@@ -1,50 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" name="/projects/challenge/src/reducers/products.spec.js" errors="0" package="/projects/challenge/src/reducers/products.spec.js" hostname="localhost" tests="4" failures="0" time="6.384" timestamp="2021-06-13T08:04:20">
-    <properties>
-    </properties>
-    <testcase classname="when products are received" name="contains the products from the action" time="0">
-    </testcase>
-    <testcase classname="when products are received" name="contains no other products" time="0">
-    </testcase>
-    <testcase classname="when products are received" name="lists all of the products as visible" time="0">
-    </testcase>
-    <testcase classname="when an item is added to the cart" name="the inventory is reduced" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="1" name="/projects/challenge/src/components/ProductsList.spec.js" errors="0" package="/projects/challenge/src/components/ProductsList.spec.js" hostname="localhost" tests="2" failures="0" time="6.708" timestamp="2021-06-13T08:04:20">
-    <properties>
-    </properties>
-    <testcase classname="ProductsList component" name="should render title" time="0">
-    </testcase>
-    <testcase classname="ProductsList component" name="should render children" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="2" name="/projects/challenge/src/components/Product.spec.js" errors="0" package="/projects/challenge/src/components/Product.spec.js" hostname="localhost" tests="2" failures="0" time="6.609" timestamp="2021-06-13T08:04:20">
-    <properties>
-    </properties>
-    <testcase classname="Product component" name="should render title and price" time="0">
-    </testcase>
-    <testcase classname="when given inventory" name="should render title, price, and inventory" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="3" name="/projects/challenge/src/reducers/index.spec.js" errors="0" package="/projects/challenge/src/reducers/index.spec.js" hostname="localhost" tests="2" failures="0" time="6.613" timestamp="2021-06-13T08:04:20">
-    <properties>
-    </properties>
-    <testcase classname="getTotal" name="should return price total" time="0">
-    </testcase>
-    <testcase classname="getCartProducts" name="should return products with quantity" time="0">
-    </testcase>
-    <system-out/>
-    <system-err/>
-  </testsuite>
-  <testsuite id="4" name="/projects/challenge/src/reducers/cart.spec.js" errors="0" package="/projects/challenge/src/reducers/cart.spec.js" hostname="localhost" tests="5" failures="0" time="7.068" timestamp="2021-06-13T08:04:20">
+  <testsuite id="0" name="/projects/challenge/src/reducers/cart.spec.js" errors="0" package="/projects/challenge/src/reducers/cart.spec.js" hostname="localhost" tests="5" failures="0" time="6.002" timestamp="2021-06-13T08:05:35">
     <properties>
     </properties>
     <testcase classname="cart" name="should provide the initial state" time="0">
@@ -60,7 +16,51 @@
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="5" name="/projects/challenge/src/components/ProductItem.spec.js" errors="0" package="/projects/challenge/src/components/ProductItem.spec.js" hostname="localhost" tests="6" failures="0" time="7.204" timestamp="2021-06-13T08:04:20">
+  <testsuite id="1" name="/projects/challenge/src/components/Product.spec.js" errors="0" package="/projects/challenge/src/components/Product.spec.js" hostname="localhost" tests="2" failures="0" time="6.002" timestamp="2021-06-13T08:05:35">
+    <properties>
+    </properties>
+    <testcase classname="Product component" name="should render title and price" time="0">
+    </testcase>
+    <testcase classname="when given inventory" name="should render title, price, and inventory" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="2" name="/projects/challenge/src/reducers/index.spec.js" errors="0" package="/projects/challenge/src/reducers/index.spec.js" hostname="localhost" tests="2" failures="0" time="5.919" timestamp="2021-06-13T08:05:35">
+    <properties>
+    </properties>
+    <testcase classname="getTotal" name="should return price total" time="0">
+    </testcase>
+    <testcase classname="getCartProducts" name="should return products with quantity" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="3" name="/projects/challenge/src/components/ProductsList.spec.js" errors="0" package="/projects/challenge/src/components/ProductsList.spec.js" hostname="localhost" tests="2" failures="0" time="6.111" timestamp="2021-06-13T08:05:35">
+    <properties>
+    </properties>
+    <testcase classname="ProductsList component" name="should render title" time="0">
+    </testcase>
+    <testcase classname="ProductsList component" name="should render children" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="4" name="/projects/challenge/src/reducers/products.spec.js" errors="0" package="/projects/challenge/src/reducers/products.spec.js" hostname="localhost" tests="4" failures="0" time="5.889" timestamp="2021-06-13T08:05:35">
+    <properties>
+    </properties>
+    <testcase classname="when products are received" name="contains the products from the action" time="0">
+    </testcase>
+    <testcase classname="when products are received" name="contains no other products" time="0">
+    </testcase>
+    <testcase classname="when products are received" name="lists all of the products as visible" time="0">
+    </testcase>
+    <testcase classname="when an item is added to the cart" name="the inventory is reduced" time="0">
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite id="5" name="/projects/challenge/src/components/ProductItem.spec.js" errors="0" package="/projects/challenge/src/components/ProductItem.spec.js" hostname="localhost" tests="6" failures="0" time="6.214" timestamp="2021-06-13T08:05:35">
     <properties>
     </properties>
     <testcase classname="ProductItem component" name="should render product" time="0">
@@ -78,10 +78,22 @@
     <system-out/>
     <system-err/>
   </testsuite>
-  <testsuite id="6" name="/projects/challenge/src/components/Cart.spec.js" errors="0" package="/projects/challenge/src/components/Cart.spec.js" hostname="localhost" tests="6" failures="1" time="7.675" timestamp="2021-06-13T08:04:20">
+  <testsuite id="6" name="/projects/challenge/src/components/Cart.spec.js" errors="0" package="/projects/challenge/src/components/Cart.spec.js" hostname="localhost" tests="6" failures="2" time="6.814" timestamp="2021-06-13T08:05:35">
     <properties>
     </properties>
     <testcase classname="Cart component" name="should display total" time="0">
+      <failure message="Error: Method “text” is meant to be run on 1 node. 2 found instead.
+    at ShallowWrapper.single (/projects/challenge/node_modules/enzyme/build/ShallowWrapper.js:2197:17)
+    at ShallowWrapper.text (/projects/challenge/node_modules/enzyme/build/ShallowWrapper.js:1302:21)
+    at Object.it (/projects/challenge/src/components/Cart.spec.js:32:14)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
     </testcase>
     <testcase classname="Cart component" name="should display add some products message" time="0">
       <failure message="Error: Method “text” is meant to be run on 1 node. 0 found instead.
