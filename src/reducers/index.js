@@ -14,7 +14,7 @@ export const getTotal = state => {
   if (state.products && state.cart.addedIds) {
     fromCart.getCart(state).addedIds.forEach(pId => {
       tot +=
-        fromProducts.getProducts(state)[pId - 1].price *
+        fromProducts.getProducts(state).byId[pId - 1].price *
         fromCart.getCart(state).quantityById[pId];
     });
   }
@@ -24,10 +24,10 @@ export const getTotal = state => {
 export const getCartProducts = state => {
   var Obj = [];
   // console.log('2 ->', state);
-  if (state.products && state.cart.addedIds) {
+  if (state.products.byId && state.cart.addedIds) {
     fromCart.getCart(state).addedIds.forEach(pId => {
       Obj.push(
-        Object.assign({}, fromProducts.getProducts(state)[pId - 1], {
+        Object.assign({}, fromProducts.getProducts(state).byId[pId - 1], {
           quantity: fromCart.getCart(state).quantityById[pId]
         })
       );
