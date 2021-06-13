@@ -6,22 +6,18 @@ const Cart = ({ products, total, onCheckoutClicked }) => {
   // Cart component should display total products
   // It should display a message "You can add some products to cart."
   // When product is added it should display title, price and quantity.
-  const nodes = [];
+  const nodes = ['You can add some products to cart.'];
 
-  if (products.length === 0) {
-    nodes.push(1)
-    nodes.push('You can add some products to cart.');
-  } else {
-    products.map(product =>
-      nodes.push(
-        <Product
-          title={product.title}
-          price={product.price}
-          quantity={product.quantity}
-        />
-      )
-    );
-  }
+  products.map(product =>
+    nodes.push(
+      <Product
+        title={product.title}
+        price={product.price}
+        quantity={product.quantity}
+      />
+    )
+  );
+  
 
   return (
     <div>
