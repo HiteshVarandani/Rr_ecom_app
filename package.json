@@ -24,7 +24,6 @@
     "pretest": "npm install",
     "test": "rm -rf ./unit.xml && CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter --coverage --collectCoverageFrom=src/index.js --updateSnapshot",
     "lint": "eslint ./src -o eslint.xml -f junit; exit 0"
-    
   },
   "eslintConfig": {
     "extends": "react-app"
