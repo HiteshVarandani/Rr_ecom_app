@@ -6,7 +6,7 @@ const Product = ({ title, price, quantity }) => (
   // It should render title, price and quantity when given inventory
   <div>
     <p>
-      {title} - ${price}{(quantity)?`x ${quantity}`:''}
+      {title} - ${price}{(quantity)?` x ${quantity}`:''}
     </p>
   </div>
 );

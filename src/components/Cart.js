@@ -9,6 +9,7 @@ const Cart = ({ products, total, onCheckoutClicked }) => {
   const nodes = [];
 
   if (products.length === 0) {
+    nodes.push(1)
     nodes.push('You can add some products to cart.');
   } else {
     products.map(product =>
